@@ -9,7 +9,7 @@ script:
   - docker run -e CI=true nejiang/docker-react npm run test -- --coverage
 
 deploy:
-  provider: elasticbeanstalker
+  provider: elasticbeanstalk
   region: "us-east-2"
   app: "docker"
   env: "Docker-env"
